@@ -1,0 +1,11 @@
+main {
+  @include clearfix;
+  padding: 2em 2em 3em; 
+  display: block;
+
+}
+
+.front main {
+  padding: 0;
+  background: #2a2b31;
+}

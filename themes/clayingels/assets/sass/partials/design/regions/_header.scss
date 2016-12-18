@@ -1,0 +1,21 @@
+header.site-header {
+  @include clearfix;
+    position: relative;
+    z-index: 2;
+    background: $nav-bg;
+    padding: 1em 2em;
+
+}
+.logo {
+  width: 50%;
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+    @include grid-span(2, 1);
+  }
+}
+
+.main-nav {
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+    @include grid-span(8, 5);
+  }
+}
+

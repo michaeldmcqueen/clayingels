@@ -1,0 +1,33 @@
+footer {
+  @include clearfix;
+  background: $footer-bg;
+  padding: 2em 2em;
+  text-align: center;
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+    text-align: left;
+  }
+  .footer-left {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100px;
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+       width: 20%;
+    }
+  }
+  .footer-right {
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    text-align: center;
+    text-transform: uppercase;
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+       width: 45%;
+    }
+  }
+  p {
+    font-size: 90%;
+  }
+  a, a:visited {
+    color: $color-two;
+  }
+}

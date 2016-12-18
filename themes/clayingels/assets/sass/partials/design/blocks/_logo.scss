@@ -1,0 +1,9 @@
+.logo {
+  img {
+    width: 150px;
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      max-width: 215px;
+      width: 100%;
+    }
+  }
+}

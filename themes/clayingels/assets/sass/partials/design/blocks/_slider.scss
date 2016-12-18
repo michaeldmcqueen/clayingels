@@ -1,0 +1,47 @@
+.flexslider {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  .caption {
+    text-align: center;
+    padding: 2em 2em;
+    background: #3872a3;
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      background: none;
+      padding: 0;
+      position: absolute;
+      margin: 0 auto;
+      top: 30%;
+      width: 70%;
+      left: 15%;
+    }
+    @include breakpoint($desktop, $no-query: '.no-mq') {
+      width: 50%;
+      left: 25%;
+    }
+    h4 {
+      font-family: $font-family;
+      font-weight: 700;
+      font-style: italic;
+      color: #fff;
+      margin: 0 0 .75em;
+      @include breakpoint($tablet, $no-query: '.no-mq') {
+        font-size: 2.2em;
+        text-shadow: 2px 2px 14px rgba(0,0,0,.76);
+      }
+      @include breakpoint($desktop, $no-query: '.no-mq') {
+        font-size: 3em;
+      }
+    }
+    .btn a {
+      font-size: 90%;
+      @include breakpoint($tablet, $no-query: '.no-mq') {
+        font-size: 1.3em;
+        background-color: rgba(43, 99, 164, 0.75);
+      }
+    }
+  }
+  .flex-control-paging {
+    display: none;
+  }
+}
