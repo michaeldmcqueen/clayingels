@@ -2,7 +2,7 @@
   <header class="site-header" role="banner">
       <div class="logo">
         <a href="/" title="Clay Ingels Home">
-          <img src="/sites/all/themes/clayingels/assets/images/logos/logo.png" alt="Clay Ingels">
+          <img src="<?php print $GLOBALS['base_url'] . '/' . drupal_get_path('theme', 'clayingels'); ?>/assets/images/logos/logo.png" alt="Clay Ingels">
         </a>
       </div>
       <?php print render($page['header']); ?>
@@ -42,7 +42,7 @@
   <footer>
     <?php if ($page['footer']): ?>
         <div class="footer-left">
-          <img src="/sites/all/themes/clayingels/assets/images/logos/logo-sq.png" alt="Clay Ingels">
+          <img src="<?php print $GLOBALS['base_url'] . '/' . drupal_get_path('theme', 'clayingels'); ?>/assets/images/logos/logo-sq.png" alt="Clay Ingels">
         </div>
         <div class="footer-right">
           <p class="copyright">Copyright © 2016 Clay Ingels. All rights reserved.</p>
